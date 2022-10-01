@@ -2,6 +2,6 @@
 
 ## N6 AI
 
-We at N6 AI strongly believe that Artificial Intelligence will play a major role in the future of our world as we know it. While AI is still in the early innings of adoption across all sectors and industries, it is certainly here to stay.
+Our mission at N6 AI is to redefine the way we interact with machines and machines interact with us, by delivering exceptional digital experiences that run on the world wide web.
 
-We are pushing the boundaries of what’s possible by delivering AI powered solutions for the modern web.
+We are pushing the boundaries of what’s possible by creating and delivering AI powered solutions and providing the missing link between machines and humans. 
