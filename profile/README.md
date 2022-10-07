@@ -1,4 +1,4 @@
-![N6 AI key visual](https://user-images.githubusercontent.com/68379148/194674787-a59ee32d-b18c-4287-9a0d-15392a76dd46.jpg)
+![N6 AI key visual](https://user-images.githubusercontent.com/68379148/194675747-cdba2b80-7da2-4d27-9eeb-049d490b2b8b.jpg)
 
 ## N6 AI
 
