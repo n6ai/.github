@@ -4,6 +4,6 @@
 
 ## N6 AI
 
-> AI powered solutions for the modern web.
+> Beyond cutting edge.
 
 Our mission at N6 AI is to redefine the way we interact with machines and machines interact with us, by delivering exceptional digital products and custom-tailored solutions that run on the world wide web.
