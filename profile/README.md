@@ -6,4 +6,4 @@
 
 > Beyond cutting edge.
 
-Redefining the way we interact with machines, by creating remarkable digital experiences that run on the world wide web.
+Redefining the way we interact with machines, by creating digital experiences that run on the world wide web.
