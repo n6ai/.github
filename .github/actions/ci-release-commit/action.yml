@@ -27,9 +27,9 @@ runs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
     - name: Modify .bumpfile
-      if: ${{ use-bumpfile }}
+      if: ${{ inputs.use-bumpfile }}
       shell: bash
-      run: echo $RANDOM > ${{ bumpfile-dir || '.' }}/.bumpfile
+      run: echo $RANDOM > ${{ inputs.bumpfile-dir || '.' }}/.bumpfile
 
     - name: Git commit
       shell: bash
