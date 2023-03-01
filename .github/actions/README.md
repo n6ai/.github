@@ -1,6 +1,6 @@
 # GitHub Actions
 
-> Reusable quick GitHub Actions 🏃
+> Reusable quick GitHub Actions
 
 ## Example Usage
 
