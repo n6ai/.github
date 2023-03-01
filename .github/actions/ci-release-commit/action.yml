@@ -34,7 +34,7 @@ runs:
     - name: Git commit
       shell: bash
       run: |
-        git commit --allow-empty -am ${{ inputs.commit-msg || 'release: manual release' }}
+        git commit --allow-empty -am ${{ inputs.commit-msg || '"release: manual release"' }}
 
     - name: Push to repo
       shell: bash
