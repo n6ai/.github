@@ -1,0 +1,21 @@
+{
+  "name": "package",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "format": "npx -y prettier --write --cache .",
+    "postinstall": "npx simple-git-hooks"
+  },
+  "devDependencies": {
+    "simple-git-hooks": "^2.8.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged",
+    "commit-msg": "npx @n6ai/verify-commit-msg@latest $1"
+  },
+  "lint-staged": {
+    "*": [
+      "npx prettier --write --cache --ignore-unknown"
+    ]
+  }
+}

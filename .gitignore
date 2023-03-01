@@ -1,0 +1,4 @@
+.DS_Store
+.temp
+cache
+node_modules
