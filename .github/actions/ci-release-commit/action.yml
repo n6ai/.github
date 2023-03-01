@@ -1,0 +1,41 @@
+# creates an empty git commit or updates a bumpfile and
+# pushes it back to the repo to manually
+# trigger certain release tools like release-please
+
+name: CI Release Commit
+
+inputs:
+  use-bumpfile:
+    description: If a .bumpfile should be used and bumped
+  bumpfile-dir:
+    description: The directory where the .bumpfile resides
+  commit-msg:
+    description: Commit message
+
+runs:
+  using: composite
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        ref: main # needs to be explicitly set to pull the latest changes
+
+    - name: Set user
+      shell: bash
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+    - name: Modify .bumpfile
+      if: ${{ use-bumpfile }}
+      shell: bash
+      run: echo $RANDOM > ${{ bumpfile-dir || '.' }}/.bumpfile
+
+    - name: Git commit
+      shell: bash
+      run: |
+        git commit --allow-empty -am ${{ inputs.commit-msg || 'release: manual release' }}
+
+    - name: Push to repo
+      shell: bash
+      run: git push origin main

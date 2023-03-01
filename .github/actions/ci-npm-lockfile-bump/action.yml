@@ -1,0 +1,42 @@
+# bumps the version of the package-lock.json file
+# to match the version of the package.json file
+# and commits the new file back to the repo
+
+name: CI npm Lockfile Bump
+
+inputs:
+  node-version:
+    description: Node.js version
+
+runs:
+  using: composite
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        ref: main # needs to be explicitly set to pull the latest changes
+
+    - name: Set user
+      shell: bash
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+    - name: Use Node.js ${{ inputs.node-version || 18 }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version || 18 }}
+
+    - name: Install dependencies
+      shell: bash
+      run: npm install --ignore-scripts
+
+    - name: Git add and commit
+      shell: bash
+      run: |
+        git add package-lock.json
+        git commit -m 'chore(deps): lock file bump'
+
+    - name: Push to repo
+      shell: bash
+      run: git push origin main

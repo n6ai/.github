@@ -1,0 +1,34 @@
+# Publishes a package to npm
+
+name: CI npm Publish
+
+inputs:
+  node-version:
+    description: Node.js version
+  npm-token:
+    description: NPM tocken
+
+runs:
+  using: composite
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        ref: main # needs to be explicitly set to pull the latest changes
+
+    - name: Use Node.js ${{ inputs.node-version || 18 }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version || 18 }}
+        registry-url: 'https://registry.npmjs.org'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Create build
+      run: npm run build
+
+    - name: Publish
+      run: npm publish --ignore-scripts --access public
+      env:
+        NODE_AUTH_TOKEN: ${{ inputs.npm-token }}
