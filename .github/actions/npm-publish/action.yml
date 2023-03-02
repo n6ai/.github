@@ -1,6 +1,6 @@
 # Publishes a package to npm
 
-name: CI npm Publish
+name: npm Publish
 
 inputs:
   node-version:

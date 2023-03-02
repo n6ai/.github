@@ -2,7 +2,7 @@
 # pushes it back to the repo to manually
 # trigger certain release tools like release-please
 
-name: CI Release Commit
+name: Release Commit
 
 inputs:
   use-bumpfile:
