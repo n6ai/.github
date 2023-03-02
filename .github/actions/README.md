@@ -5,7 +5,7 @@
 ## Example Usage
 
 ```yml
-name: CI Release Commit
+name: Release Commit
 
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ jobs:
   release-commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: n6ai/.github/.github/actions/ci-release-commit@main
+      - uses: n6ai/.github/.github/actions/release-commit@main
         with:
           use-bumpfile: true
 ```
