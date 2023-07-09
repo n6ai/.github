@@ -2,7 +2,7 @@
 # to match the version of the package.json file
 # and commits the new file back to the repo
 
-name: npm Lockfile Bump
+name: Bump Lockfile
 
 inputs:
   node-version:
