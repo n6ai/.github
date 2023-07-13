@@ -6,4 +6,4 @@
 
 > Beyond cutting edge.
 
-Redefining the way we interact with machines, through AI-powered digital experiences that run on the web.
+Redefining the way we interact with machines, through AI-powered digital experiences.
