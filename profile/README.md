@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/68379148/209661663-dffee157-fb56-4013-82b2-54201e42daad.png" width="275" alt="N6 AI key visual">
+  <img src="https://github.com/n6ai/.github/assets/68379148/5e5acbf0-bed4-4af9-af94-cd9ffd909848" width="275" alt="N6 AI key visual">
 </p>
 
 ## N6 AI
