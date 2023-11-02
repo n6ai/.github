@@ -6,4 +6,4 @@
 
 > Beyond cutting edge.
 
-Redefining the way we interact with machines, through AI-powered digital experiences.
+Finding simple solutions for complex problems with the power of Artificial Intelligence.
